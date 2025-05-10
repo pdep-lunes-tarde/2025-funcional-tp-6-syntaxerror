@@ -11,16 +11,13 @@
 
 ## Equipo
 
-- Nombre del grupo
+- Syntax Error
 
-- Legajo: **Completar**
-- Nombre: **Completar**
+- Legajo: **220.878-7**
+- Nombre: **Joaquin Santa Cruz**
 
-- Legajo: **Completar**
-- Nombre: **Completar**
-
-- Legajo: **Completar**
-- Nombre: **Completar**
+- Legajo: **220.777-1**
+- Nombre: **Sofia Arroyo**
 
 
 ## El enunciado
