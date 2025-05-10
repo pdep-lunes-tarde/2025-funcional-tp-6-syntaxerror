@@ -3,6 +3,9 @@ import PdePreludat
 import Library
 import Test.Hspec
 import Control.Exception (evaluate)
+import GHC.Generics (prec)
+import Data.Functor.Contravariant (comparisonEquivalence)
+
 
 correrTests :: IO ()
 correrTests = hspec $ do
@@ -30,3 +33,20 @@ correrTests = hspec $ do
 
         it "pdepBurger tiene precio final 110" $ do
             precioFinal pdepBurger `shouldBe` 110
+
+        it "dobleCuarto tiene precio final 84" $ do
+            precioFinal dobleCuarto `shouldBe` 84
+
+        it "bigPdep tiene precio final 89" $ do
+            precioFinal bigPdep `shouldBe` 89 
+
+        it "bigPdep del dia tiene precio final 88" $ do
+            precioFinal (delDia dobleCuarto) `shouldBe` 88
+
+        it "hacerVeggie a un bigPedp" $ do
+            hacerVeggie bigPdep `shouldBe` Hamburguesa 20 [Pan, PatiVegano, QuesoDeAlmendras, Pan, PatiVegano, QuesoDeAlmendras, Curry]
+        it "cambiarPanDePati a bigPdep" $ do
+            cambiarPanDePati bigPdep `shouldBe` Hamburguesa 20 [PanIntegral,Carne,Carne,Cheddar,Cheddar,Curry,PanIntegral]
+
+        it "dobleCuartoVegano tiene precio final 76" $ do
+            precioFinal dobleCuartoVegano `shouldBe` 76
