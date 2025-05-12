@@ -84,6 +84,7 @@ convertirVeggie otro = otro
 
 cambiarPan ::Ingrediente -> Ingrediente
 cambiarPan Pan = PanIntegral
+cambiarPan otro = otro
 
 hacerVeggie :: Hamburguesa -> Hamburguesa
 hacerVeggie (Hamburguesa precio ingredientes) =
