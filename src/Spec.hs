@@ -45,8 +45,8 @@ correrTests = hspec $ do
 
         it "hacerVeggie a un bigPedp" $ do
             hacerVeggie bigPdep `shouldBe` Hamburguesa 20 [Pan, PatiVegano, QuesoDeAlmendras, Pan, PatiVegano, QuesoDeAlmendras, Curry]
-        it "cambiarPanDePati a bigPdep" $ do
-            cambiarPanDePati bigPdep `shouldBe` Hamburguesa 20 [PanIntegral,Carne,Carne,Cheddar,Cheddar,Curry,PanIntegral]
 
+        it "cambiarPanDePati a bigPdep" $ do
+            cambiarPanDePati bigPdep `shouldBe` Hamburguesa 20 [PanIntegral, Carne, Cheddar, PanIntegral, Carne, Cheddar, Curry]
         it "dobleCuartoVegano tiene precio final 76" $ do
             precioFinal dobleCuartoVegano `shouldBe` 76
